@@ -1,7 +1,19 @@
-import { GET_ITEMS, ADD_ITEM, DELETE_ITEM } from "./types";
+import { GET_ITEMS, ADD_ITEM, DELETE_ITEM } from './types';
 
 export const getItems = () => {
-    return {
-        types: GET_ITEMS
-    }
-}
+	return {
+		type: GET_ITEMS
+	};
+};
+export const deleteItem = (id) => {
+	return {
+		type: DELETE_ITEM,
+		payload: id
+	};
+};
+export const addItem = (id) => {
+	return {
+		type: ADD_ITEM,
+		payload: id
+	};
+};
