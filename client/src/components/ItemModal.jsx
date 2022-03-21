@@ -11,7 +11,7 @@ import {
 } from 'reactstrap';
 import { connect } from 'react-redux';
 import { addItem } from '../actions/itemActions';
-import { v4 as uuid } from 'uuid';
+
 
 // import { IItemReduxProps, IItemModal, ITarget } from '../types/interfaces';
 
@@ -33,7 +33,6 @@ class ItemModal extends Component {
     handleOnSubmit = (e) => {
         e.preventDefault();
         const newItem = {
-            id: uuid(),
             name: this.state.name
         }
         this.props.addItem(newItem);
