@@ -6,8 +6,6 @@ const initialState = {
 };
 
 const itemReducer = (state = initialState, action) => {
-	console.log(action);
-
 	switch (action.type) {
 		case GET_ITEMS:
 			return {
