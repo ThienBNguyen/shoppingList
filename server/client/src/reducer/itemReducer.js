@@ -1,5 +1,5 @@
 // import { v4 as uuid } from 'uuid';
-import { GET_ITEMS, ADD_ITEM, DELETE_ITEM, ITEMS_LOADING } from '../../actions/types';
+import { GET_ITEMS, ADD_ITEM, DELETE_ITEM, ITEMS_LOADING } from '../actions/types';
 const initialState = {
 	items: [],
 	loading: false

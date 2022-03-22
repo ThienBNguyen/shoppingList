@@ -10,8 +10,7 @@ const app = express();
 //bodyparser middleware
 app.use(express.json());
 const db = config.get('mongoURI');
-const uri =
-	'mongodb+srv://mongoconnect:Tn123456789@yelpcamp.7z2ix.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+
 mongoose
 	.connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
 	.then(() => console.log('mongoDB Connected...')).catch;
