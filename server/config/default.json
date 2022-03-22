@@ -1,0 +1,4 @@
+{
+	"mongoURI": "mongodb+srv://mongoconnect:Tn123456789@yelpcamp.7z2ix.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+	"jwtSecret": "jwt_secret"
+}
