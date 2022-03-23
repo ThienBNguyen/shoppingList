@@ -11,12 +11,12 @@ const jwt = require('jsonwebtoken');
 router.post('/', (req, res) => {
 	const { name, email, password } = req.body;
 	if (!name || !email || !password) {
-		return res.status(400).json({ meg: 'please enter all fields' });
+		return res.status(400).json({ msg: 'please enter all fields' });
 	}
 	//check for existing user
 	User.findOne({ email }).then((user) => {
 		if (user) {
-			return res.status(400).json({ meg: 'User already exists' });
+			return res.status(400).json({ msg: 'User already exists' });
 		}
 		const newUser = new User({ name, email, password });
 		//create salt & hash

@@ -12,6 +12,7 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', auth, (req, res) => {
+	console.log(req.body);
 	// get the object from the bodyparser
 	const newItem = new Item({
 		name: req.body.name
